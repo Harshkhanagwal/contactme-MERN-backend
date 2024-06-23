@@ -7,9 +7,8 @@ const connectDb = require('./utils/db');
 const cors = require('cors')
 const app = express();
 
-const frontEnd_url = process.env.FRONTEND_URL 
 const corsOptions = {
-    origin : frontEnd_url,
+    origin : "https://master--contactme-harshkhanagwal.netlify.app",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials : true
 }

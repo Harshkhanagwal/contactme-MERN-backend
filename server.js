@@ -19,7 +19,7 @@ app.use("/api/auth", authrouter);
 app.use("/api/contact", contactrouter);
 app.use("/api/admin", adminrouter);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 3000;
 
 connectDb().then(() => {
 

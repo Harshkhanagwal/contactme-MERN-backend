@@ -7,8 +7,9 @@ const connectDb = require('./utils/db');
 const cors = require('cors')
 const app = express();
 
+const frontEnd_url = process.env.FRONTEND_URL 
 const corsOptions = {
-    origin : 'http://localhost:5173',
+    origin : frontEnd_url,
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials : true
 }
